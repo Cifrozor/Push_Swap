@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Push_S.dir/main.c.o CMakeFiles/Push_S.dir/checker.c.o CMakeFiles/Push_S.dir/push_swap..c.o  -o Push_S 
