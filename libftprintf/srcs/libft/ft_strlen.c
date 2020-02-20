@@ -1,17 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ljacquet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hdeckard <hdeckard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/01 11:56:21 by ljacquet          #+#    #+#             */
-/*   Updated: 2020/10/01 14:48:30 by ljacquet         ###   ########.fr       */
+/*   Created: 2019/09/05 14:32:02 by hdeckard          #+#    #+#             */
+/*   Updated: 2019/12/04 17:25:44 by hdeckard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main1(int argc, char **argv)
-{
+#include "libft.h"
 
-	return (0);
+size_t		ft_strlen(const char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }

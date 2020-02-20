@@ -1,17 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   print_in_while.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ljacquet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hdeckard <hdeckard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/01 11:56:21 by ljacquet          #+#    #+#             */
-/*   Updated: 2020/10/01 14:48:30 by ljacquet         ###   ########.fr       */
+/*   Created: 2019/11/22 17:15:52 by hdeckard          #+#    #+#             */
+/*   Updated: 2019/12/04 17:25:44 by hdeckard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main1(int argc, char **argv)
-{
+#include "ft_printf.h"
 
-	return (0);
+void		print_in_while(char c, int count, t_data *data)
+{
+	if (c == 0)
+		return ;
+	if (count < 1)
+		return ;
+	data->len = data->len + count;
+	while (count > 0)
+	{
+		write(1, &c, 1);
+		count--;
+	}
 }

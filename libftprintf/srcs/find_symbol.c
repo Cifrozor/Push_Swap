@@ -1,17 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_printf_b.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ljacquet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hdeckard <hdeckard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/01 11:56:21 by ljacquet          #+#    #+#             */
-/*   Updated: 2020/10/01 14:48:30 by ljacquet         ###   ########.fr       */
+/*   Created: 2019/11/22 17:12:33 by hdeckard          #+#    #+#             */
+/*   Updated: 2019/11/23 16:36:24 by hdeckard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main1(int argc, char **argv)
-{
+#include "ft_printf.h"
 
+int				find_symbol(char c, char *macros)
+{
+	int		index;
+
+	index = 0;
+	while (macros[index] != '\0')
+	{
+		if (macros[index] == c)
+			return (1);
+		index++;
+	}
 	return (0);
 }

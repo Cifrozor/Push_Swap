@@ -10,8 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main1(int argc, char **argv)
-{
+#ifndef PUSH_SWAP_H
+#define PUSH_SWAP_H
 
-	return (0);
-}
+
+
+#endif
+

@@ -1,17 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ljacquet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hdeckard <hdeckard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/01 11:56:21 by ljacquet          #+#    #+#             */
-/*   Updated: 2020/10/01 14:48:30 by ljacquet         ###   ########.fr       */
+/*   Created: 2019/09/09 19:00:39 by hdeckard          #+#    #+#             */
+/*   Updated: 2019/10/23 16:22:36 by hdeckard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main1(int argc, char **argv)
-{
+#include "libft.h"
 
-	return (0);
+int		ft_isprint(int c)
+{
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
 }

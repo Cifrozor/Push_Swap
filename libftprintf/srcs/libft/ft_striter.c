@@ -1,17 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ljacquet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hdeckard <hdeckard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/01 11:56:21 by ljacquet          #+#    #+#             */
-/*   Updated: 2020/10/01 14:48:30 by ljacquet         ###   ########.fr       */
+/*   Created: 2019/09/09 13:58:30 by hdeckard          #+#    #+#             */
+/*   Updated: 2019/10/23 16:22:36 by hdeckard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main1(int argc, char **argv)
-{
+#include "libft.h"
 
-	return (0);
+void	ft_striter(char *s, void (*f)(char *))
+{
+	int	k;
+
+	if (!s || !f)
+		return ;
+	k = ft_strlen(s);
+	while (k > 0)
+	{
+		f(s);
+		s++;
+		k--;
+	}
 }

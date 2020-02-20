@@ -1,17 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   print_pole_and_bufferdata.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ljacquet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hdeckard <hdeckard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/01 11:56:21 by ljacquet          #+#    #+#             */
-/*   Updated: 2020/10/01 14:48:30 by ljacquet         ###   ########.fr       */
+/*   Created: 2019/11/22 17:15:58 by hdeckard          #+#    #+#             */
+/*   Updated: 2019/12/04 18:17:36 by hdeckard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main1(int argc, char **argv)
-{
+#include "ft_printf.h"
 
-	return (0);
+char		**ft_new_ar_c(int a, int b)
+{
+	char	**mas;
+	int		i;
+
+	mas = (char **)malloc(sizeof(char*) * (a));
+	i = 0;
+	while (i < a)
+	{
+		mas[i] = (char *)malloc(sizeof(char) * b);
+		i++;
+	}
+	return (mas);
 }

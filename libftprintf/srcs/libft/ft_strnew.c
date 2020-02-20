@@ -1,17 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ljacquet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hdeckard <hdeckard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/01 11:56:21 by ljacquet          #+#    #+#             */
-/*   Updated: 2020/10/01 14:48:30 by ljacquet         ###   ########.fr       */
+/*   Created: 2019/09/09 12:58:17 by hdeckard          #+#    #+#             */
+/*   Updated: 2019/10/23 16:22:36 by hdeckard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		main1(int argc, char **argv)
-{
+#include "libft.h"
 
-	return (0);
+char		*ft_strnew(size_t size)
+{
+	char	*str;
+
+	if (size + 1 == 0)
+		return (NULL);
+	if (size == 0)
+		return (NULL);
+	str = ft_memalloc(size + 1);
+	if (!(str))
+		return (NULL);
+	return (str);
 }
