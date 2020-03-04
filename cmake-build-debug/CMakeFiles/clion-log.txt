@@ -1,4 +1,13 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/ljacquet/CLionProjects/Push_S
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/ljacquet/PS2
+-- The C compiler identification is AppleClang 9.0.0.9000039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found OpenGL: /System/Library/Frameworks/OpenGL.framework   
+-- Found GLUT: /System/Library/Frameworks/GLUT.framework  
 -- Configuring done
 CMake Error at CMakeLists.txt:15 (add_executable):
   Cannot find source file:
@@ -9,8 +18,21 @@ CMake Error at CMakeLists.txt:15 (add_executable):
   .hpp .hxx .in .txx
 
 
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    checker.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
 CMake Error at CMakeLists.txt:15 (add_executable):
   No SOURCES given to target: checker
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: Push_S
 
 
 CMake Generate step failed.  Build files cannot be regenerated correctly.
